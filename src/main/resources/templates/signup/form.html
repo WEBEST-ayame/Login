@@ -7,8 +7,6 @@
 <body>
 <h2>新規登録フォーム</h2>
 <form th:action="@{signup/regist}" th:object="${userDetailForm}" method="post">
-  <label for="userId">ユーザーID</label>
-  <input id="userId" name="userId" th:field="*{userId}" />
   <label for="userName">ユーザー名</label>
   <input id="userName" name="userName" th:field="*{userName}" />
   <label for="email">登録するメールアドレス</label>
