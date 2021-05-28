@@ -7,7 +7,7 @@ import lombok.Data;
 @Component
 @Data
 public class UserDetailForm {
-	private String userId;
+	private int userId;
 	
 	private String userName;
 
@@ -21,11 +21,11 @@ public class UserDetailForm {
 	
 	private String updatedAt;
 
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 

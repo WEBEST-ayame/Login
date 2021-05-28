@@ -12,7 +12,7 @@ public class UserDetailEntity {
 	
 	@Id
 	@Column(name = "user_id")
-	private String userId;
+	private int userId;
 	
 	@Column(name = "user_name")
 	private String userName;
@@ -32,11 +32,11 @@ public class UserDetailEntity {
 	@Column(name = "updated_at")
 	private String updatedAt;
 
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 
